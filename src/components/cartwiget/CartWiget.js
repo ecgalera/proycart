@@ -8,7 +8,7 @@ const CartWiget = () => {
     return (
         <div className='cartwiget' >
             <Container>
-                <img  className='img' src="image/cart.png" alt="logo" /><span className="span">0</span>
+                <img  className='img' src="image/cart.png" alt="logo" /><span className="spancartwiget">0</span>
             </Container>
 
         </div>

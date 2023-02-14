@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ItemsCount from './components/count/ItemsCount';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CartWiget from './components/cartwiget/CartWiget';
+import NavBar from "./components/navbar/NavBar"
+import ItemsListContainer from './components/itemsListContainer/ItemsListContainer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ItemsCount stock={10} />
-    <CartWiget/>
+    <NavBar/>
+    <ItemsListContainer/>
   </React.StrictMode>
 );
 
