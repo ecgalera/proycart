@@ -1,0 +1,20 @@
+
+.container{
+    display: flex;
+}    
+
+.button{
+    margin: 15px;
+}
+
+span{
+    margin:10px;
+    font-weight:bold;
+    
+}
+
+.agregarCarrito{
+    margin: 5px;
+    padding: 8px;
+    display: flex;
+}
