@@ -5,7 +5,6 @@ import ItemsList from '../itemsList/ItemsList'
 const ItemsListContainer = () => {
   return (
     <>
-    <div>ItemsListContainer</div>
     <ItemsList/>
     </>
   )

@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWiget from '../cartwiget/CartWiget';
+import { Link } from 'react-router-dom';
 
 function ColorSchemesExample() {
   return (
@@ -10,7 +11,8 @@ function ColorSchemesExample() {
         <Container>
           <Navbar.Brand href="#home">MyShop</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+          <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none", color:"white"}} to="/">Home</Link></li>
+          <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none",color:"white", padding: "10px",}} to="/product">Productos</Link></li>
             <Nav.Link href="#ropamujer">Ropa Mujer</Nav.Link>
             <Nav.Link href="#ropahombre">Ropa Hombre</Nav.Link>
             <Nav.Link href="#electronicos">Electronicos</Nav.Link>
