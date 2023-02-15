@@ -1,7 +1,8 @@
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Container } from 'react-bootstrap';
-import ItemsCount from '../count/ItemsCount';
+// import ItemsCount from '../count/ItemsCount';
+
 
 
 function Item(props) {
@@ -22,10 +23,12 @@ function Item(props) {
         </Card.Text>
         <Card.Text>Category : {category}</Card.Text>
         <Card.Title>Price:${price}</Card.Title>
-        <Card.Title>Stock: {props.Containerstock}</Card.Title>
-        <Button variant="primary">Detalles</Button>
+        <Card.Title>Stock: {props.stock}</Card.Title>
+        {/* <Button variant="primary">Detalles</Button> */}
+    
       </Card.Body>
-      <ItemsCount stock={props.stock}/>
+      {/* <ItemsCount stock={props.stock}/> */}
+     
     </Card>
    
 </Container>

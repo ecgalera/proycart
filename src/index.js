@@ -9,6 +9,8 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./components/home/Home"
+import ItemsList from './components/itemsList/ItemsList';
+import ItemsDetailContainer from './components/itemdetail/itemsdetailcontainer/ItemsDetailContainer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +21,8 @@ root.render(
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/product' element={<ItemsListContainer />} />
+        <Route exact path='/categoria/:categoryId' element={<ItemsList />} />
+        <Route exact path='/product/:productoId' element={<ItemsDetailContainer />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -12,13 +12,12 @@ function ColorSchemesExample() {
           <Navbar.Brand href="#home">MyShop</Navbar.Brand>
           <Nav className="me-auto">
           <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none", color:"white"}} to="/">Home</Link></li>
-          <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none",color:"white", padding: "10px",}} to="/product">Productos</Link></li>
-            <Nav.Link href="#ropamujer">Ropa Mujer</Nav.Link>
-            <Nav.Link href="#ropahombre">Ropa Hombre</Nav.Link>
-            <Nav.Link href="#electronicos">Electronicos</Nav.Link>
-            <Nav.Link href="#joyeria">Joyeria</Nav.Link>
-            <Nav.Link href="#pricing">Contactenos</Nav.Link>
-            <CartWiget/>
+          <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none",color:"white", padding: "15px",}} to="/product">Productos</Link></li>
+          <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none",color:"white", padding: "15px"}} to={'/categoria/jewelery'}>Joyeria</Link></li>
+          <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none",color:"white", padding: "15px"}}to={'/categoria/electronics'}>Electronica</Link></li>
+          <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none",color:"white", padding: "15px"}}to={"/categoria/men's clothing"}>Ropa de Hombre</Link></li>
+          <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none",color:"white", padding: "15px"}}to={"/categoria/women's clothing"}>Ropa de Mujer</Link></li>
+          <li><CartWiget/></li>
           </Nav>
         </Container>
       </Navbar>
