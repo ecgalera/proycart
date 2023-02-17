@@ -11,3 +11,17 @@ fetch('https://fakestoreapi.com/products/categories')
 fetch('https://fakestoreapi.com/products/category/jewelery')
             .then(res=>res.json())
             .then(json=>console.log(json))
+
+fetch('https://fakestoreapi.com/products/1')
+            .then(res=>res.json())
+            .then(json=>console.log(json))
+
+            //output
+            {
+                id:1,
+                title:'...',
+                price:'...',
+                category:'...',
+                description:'...',
+                image:'...'
+            }

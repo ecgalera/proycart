@@ -17,13 +17,13 @@ const ItemsList = () => {
  
        fetch(`https://fakestoreapi.com/products/category/${categoryId}`)
    .then(res => res.json())
-   .then(json => setProduct(json.map(product => <Item key={product.id} id={"product" + product.id} data={product} />)))
+   .then(json => setProduct(json.map(product => <Item key={product.id} id={"product" + product.id} data={product} stock={5}/>)))
  
      }else{
  
      fetch('https://fakestoreapi.com/products')
        .then(res => res.json())
-       .then(json => setProduct(json.map(product => <Item key={product.id} id={"product" + product.id} data={product} />)))
+       .then(json => setProduct(json.map(product => <Item key={product.id} id={"product" + product.id} data={product} stock={5}/>)))
  
      }
  

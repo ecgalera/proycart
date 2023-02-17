@@ -12,7 +12,7 @@ function ColorSchemesExample() {
           <Navbar.Brand href="#home">MyShop</Navbar.Brand>
           <Nav className="me-auto">
           <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none", color:"white"}} to="/">Home</Link></li>
-          <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none",color:"white", padding: "15px",}} to="/product">Productos</Link></li>
+          <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none",color:"white", padding: "15px",}} to={"/product"}>Productos</Link></li>
           <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none",color:"white", padding: "15px"}} to={'/categoria/jewelery'}>Joyeria</Link></li>
           <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none",color:"white", padding: "15px"}}to={'/categoria/electronics'}>Electronica</Link></li>
           <li><Link style={{ fontWeight:"bolder", textDecorationLine:"none",color:"white", padding: "15px"}}to={"/categoria/men's clothing"}>Ropa de Hombre</Link></li>
