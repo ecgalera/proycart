@@ -13,7 +13,7 @@ const ItemsDetailContainer = () => {
 
       fetch(`https://fakestoreapi.com/products/${productoId}`)
   .then(res=>res.json())
-  .then(product=>setProduct(<ItemsDetail key={product.id} id={"product" + product.id} data={product}/>))
+  .then(product=>setProduct(<ItemsDetail key={product.id} id={"product" + product.id} data={product} stock={5} />))
 
     },[productoId])
   

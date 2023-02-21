@@ -1,7 +1,6 @@
 // import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Container } from 'react-bootstrap';
-import ItemsCount from '../count/ItemsCount';
 import { Link } from "react-router-dom"
 
 
@@ -28,7 +27,7 @@ function Item(props) {
           <Card.Title>Stock: {props.stock}</Card.Title>
           <Link to={`/product/${id}`} >Detalle del Producto</Link>
         </Card.Body>
-        <ItemsCount stock={props.stock} />
+       
 
       </Card>
 
